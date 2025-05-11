@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    background-color: #000;
+    color: #FFBB55;
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+/* Menú superior */
+header {
+    width: 100%;
+    max-width: 1130px;
+    background-color: #FFBB55; /* Naranja brillante */
+    padding: 0 20px;
+    border: 2px solid #000; /* Borde negro */
+    height: 50px; /* Altura fija para la barra del menú */
+    display: flex;
+    align-items: stretch;
+    border-radius: 6px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #FFBB55; /* ← Este es el color de fondo por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Estado hover */
+.menu li a:hover {
+    background-color: #FF9933;
+    color: #000;
+}
+
+/* Estado activo */
+.menu li a.active {
+    background-color: #FF9933;
+    color: #000;
+}
+
+/* Contenido principal */
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    /*border: 6px double #FFBB55; */
+    background-color: #000;
+    margin-bottom: 40px;
+    margin-top: -40px;
+
+}
+
+.content.active {
+    display: block;
+}
+
+/* Cursor parpadeante */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+
+
+.content-double {
+  border: 6px double #FFBB55;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: 'Fira Mono', monospace;
+  font-size: 16px;      /* Tamaño del texto */
+  /*font-weight: bold;    /* Negrita */
+  line-height: 1.5;  
+  margin-top: 40px;
+}
+
+.content-double2 {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.destacado {
+  color: #FF7700;
+  font-size: 16px;     /* Tamaño más grande */
+  font-weight: bold;   /* Negrita / rojo*/
+}
+
+.robusto {
+  color: #FFBB55;
+  font-size: 18px;     /* Tamaño más grande */
+  font-weight: bold;   /* Negrita */
+}
+
+
+.separador {
+  border: 0;
+  height: 2px;
+  background: #FFBB55; /* Color naranja del marco */
+  margin: 15px 0; /* Espacio arriba y abajo */
+}
+
+
+.incluso {
+  color: white;
+}
