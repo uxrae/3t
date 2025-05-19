@@ -149,3 +149,15 @@ main {
 .incluso {
   color: white;
 }
+
+
+.enlace-simulador {
+      text-decoration: none;   /* Elimina el subrayado */
+      color: inherit;          /* Mantiene el color original del texto */
+      cursor: pointer;         /* Mantiene el cursor como flecha */
+    }
+
+
+.enlace-simulador:hover {
+      color: #39FF14;
+    }
